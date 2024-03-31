@@ -21,7 +21,7 @@ ul {
   padding: 0;
 }
 
-button {
+.top-button {
   background-color: #3882f6;
   color: white;
   font-weight: bold;
@@ -84,29 +84,85 @@ button {
 
 .information {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
 .information-text {
-  display: flex;
-  justify-content: center;
   font-size: 36px;
   font-weight: 800;
   color: #1f2937;
 }
 
-.information-box {
+.cards-container {
   display: flex;
-  gap: 36px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  width: 150px;
+  margin: 20px;
+  text-align: center;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  color: #e5e7eb;
 }
 
 .information-box-c {
-  display: flex;
-  flex-direction: column;
   width: 150px;
   height: 150px;
   border-style: solid;
   border-radius: 10%;
   border-color: #3882f6;
+}
+
+.quote {
+  background-color: #e5e7eb;
+}
+
+.quote-c {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.quote-text {
+  font-size: 48px;
+  font-weight: lighter;
+}
+
+.quote-author {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 24px;
+}
+
+.call-to-action {
+  display: flex;
+  align-items: center; /* Vertically align content */
+  background-color: #3882f6;
+  padding: 1% 5%; /* Shorter form of padding properties */
+  margin: 5% 20%; /* Shorter form of margin properties */
+  color: white;
+}
+
+.bottom-button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border: 2px solid white; /* Adjust border thickness */
+  background-color: #3882f6;
+  color: white;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 0.25rem;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 2%;
+  border-style: solid;
+  border-color: white;
 }
